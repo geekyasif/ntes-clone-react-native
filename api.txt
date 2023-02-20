@@ -1,0 +1,151 @@
+----------------- IRCTC -----------------------------------------
+Search Station 
+const options = {
+  method: 'GET',
+  url: 'https://irctc1.p.rapidapi.com/api/v1/searchStation',
+  params: {query: 'BJU'},
+  headers: {
+    'X-RapidAPI-Key': '51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a',
+    'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
+  }
+};
+
+
+
+
+SearchTrain
+ method: 'GET',
+  url: 'https://irctc1.p.rapidapi.com/api/v1/searchTrain',
+  params: {query: '190'},
+  headers: {
+    'X-RapidAPI-Key': '51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a',
+    'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
+  }
+
+
+
+TrainsBetweenStations
+const options = {
+  method: 'GET',
+  url: 'https://irctc1.p.rapidapi.com/api/v2/trainBetweenStations',
+  params: {fromStationCode: 'bju', toStationCode: 'bdts'},
+  headers: {
+    'X-RapidAPI-Key': '51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a',
+    'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
+  }
+};
+
+
+
+Get Train Live Status
+const options = {
+  method: 'GET',
+  url: 'https://irctc1.p.rapidapi.com/api/v1/liveTrainStatus',
+  params: {trainNo: '19038', startDay: '1'},
+  headers: {
+    'X-RapidAPI-Key': '51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a',
+    'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
+  }
+};
+
+
+Get Train Schedule
+const options = {
+  method: 'GET',
+  url: 'https://irctc1.p.rapidapi.com/api/v1/getTrainSchedule',
+  params: {trainNo: '12936'},
+  headers: {
+    'X-RapidAPI-Key': '51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a',
+    'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
+  }
+};
+
+
+
+Get PNR Status V3
+const options = {
+  method: 'GET',
+  url: 'https://irctc1.p.rapidapi.com/api/v3/getPNRStatus',
+  params: {pnrNumber: '<REQUIRED>'},
+  headers: {
+    'X-RapidAPI-Key': '51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a',
+    'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
+  }
+};
+
+
+CheckSeatAvailability
+const options = {
+  method: 'GET',
+  url: 'https://irctc1.p.rapidapi.com/api/v1/checkSeatAvailability',
+  params: {
+    classType: '2A',
+    fromStationCode: 'ST',
+    quota: 'GN',
+    toStationCode: 'BVI',
+    trainNo: '19038',
+    date: '2022-05-25'
+  },
+  headers: {
+    'X-RapidAPI-Key': '51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a',
+    'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
+  }
+};
+
+
+
+
+GetTrainClasses
+const options = {
+  method: 'GET',
+  url: 'https://irctc1.p.rapidapi.com/api/v1/getTrainClasses',
+  params: {trainNo: '19038'},
+  headers: {
+    'X-RapidAPI-Key': '51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a',
+    'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
+  }
+};
+
+
+
+
+Get Fare
+const options = {
+  method: 'GET',
+  url: 'https://irctc1.p.rapidapi.com/api/v2/getFare',
+  params: {trainNo: '19038', fromStationCode: 'ST', toStationCode: 'BVI'},
+  headers: {
+    'X-RapidAPI-Key': '51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a',
+    'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
+  }
+};
+
+
+
+
+
+
+------------------------------------ Free  Indian Railway IRCTC---------------------------
+Get Train Info By train Number
+const options = {
+  method: 'GET',
+  url: 'https://indian-railway-irctc.p.rapidapi.com/getTrainId',
+  params: {trainno: '1205'},
+  headers: {
+    'X-RapidAPI-Key': '51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a',
+    'X-RapidAPI-Host': 'indian-railway-irctc.p.rapidapi.com'
+  }
+};
+
+
+Get Train Live Status
+const options = {
+  method: 'GET',
+  url: 'https://indian-railway-irctc.p.rapidapi.com/getTrainLiveStatusById',
+  params: {id: '2519', date: 'Mon, 31st Dec'},
+  headers: {
+    'X-RapidAPI-Key': '51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a',
+    'X-RapidAPI-Host': 'indian-railway-irctc.p.rapidapi.com'
+  }
+};
+
